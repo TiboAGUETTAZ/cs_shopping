@@ -1,13 +1,11 @@
 # cs_shopping: Simple shopping cart project
 
 ## Project structure:
-.
-├── spec/base_scenarios.feature      # contain a feature file to cover simple BDD scenarios for this project
-├── src                              # Source files
-    ├── main/java                    # main java sources
-    ├── test/java                    # test java sources
-├── pom.xml                          # Simple maven config to build and execute the project tests
-└── README.md
+* _spec/base_scenarios.feature_:  contain a feature file to cover simple BDD scenarios for this project
+* _main/java_:  main java sources
+* _test/java_:  test java sources
+* _pom.xml_:  Simple maven config to build and execute the project tests
+* _README.md_
 
 ## Functional assumptions
 * "buy 1 get 1 free" is equivalent to "2 for 1". That's a simplification choice.
