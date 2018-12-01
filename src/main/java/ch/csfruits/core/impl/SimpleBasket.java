@@ -34,11 +34,8 @@ final public class SimpleBasket implements Basket {
             if (quantity > 0) {
                 SpecialOffer specialOffer = SpecialOfferServiceLocator.getSpecialOffers(fruit);
                 if (specialOffer != null) {
-                    System.out.println(specialOffer);
                     int offerAppliedTimes = quantity / specialOffer.getNumberBought();
                     int fruitsOutsideOfOffers = quantity % specialOffer.getNumberBought();
-                    System.out.println("offerAppliedTimes=" +offerAppliedTimes);
-                    System.out.println("fruitsOutsideOfOffers=" + fruitsOutsideOfOffers);
                     total += fruit.getUnitaryPriceInPence() * (fruitsOutsideOfOffers + offerAppliedTimes * specialOffer.getNumberPaid());
                 } else {
                     total += fruit.getUnitaryPriceInPence() * quantity;
